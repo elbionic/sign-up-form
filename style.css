@@ -1,0 +1,10 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    border: 0;
+}
+
+p {
+    font-size: 24px;
+}
