@@ -1,10 +1,136 @@
+@font-face {
+    font-family: "forte";
+    src:
+      url(/font/forte.woff2) format("woff2"),
+      url(/font/forte.woff) format("woff");
+    font-weight: lighter;
+    font-style: lighter;
+}
+
 *,
 *::before,
 *::after {
+    box-sizing: border-box;
     margin: 0;
-    border: 0;
+    padding: 0;
+    /* outline: 1px solid green; */
 }
 
-p {
-    font-size: 24px;
+body {
+    display: flex;
 }
+
+.image-container {
+    height: 100vh;
+    background-image: url(img/tea-field-nepal-by-shai-pal-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-container {
+    flex: 1.618;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.logo-container {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.329);
+    justify-content: center;
+}
+
+.logo-container img{
+    height: 13vh;
+}
+
+p.logo-text {
+    margin-top: 3.5rem;
+    font-family: "forte", Courier, monospace;
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    left: -1rem;
+}
+
+p.credits-background {
+    color: white;
+    text-align: center;
+}
+
+p.credits-background a {
+    color: rgb(255, 255, 255);
+}
+
+#top-text-container {
+    margin-top: -72px;
+    padding: 0 4vw;
+}
+
+form {
+    margin-top: 5vh;
+}
+
+legend {
+    font-size: 2rem;
+}
+
+#input-section {
+    padding: 1.5vw 4vw 3.5vw 4vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 5px 3px lightgrey;
+}
+
+.input-row {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.input-field {
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    width: 15rem;
+}
+
+input {
+    height: 2rem;
+    border: 1px solid #E5E7EB;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.button-container {
+    padding: 0 4vw;
+    margin-top: 1.5rem;
+}
+
+button {
+    margin-bottom: 1rem;
+    padding: 0.5rem 2.5rem;
+    background-color: #a5a00b;
+    color: white;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+}
+
+.button-container p span a {
+    color: #a5a00b;
+    text-decoration: none;
+}
+

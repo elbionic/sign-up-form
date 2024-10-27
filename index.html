@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,66 @@
     <script src="script.js" defer></script>
     <title>Sign-up form</title>
 </head>
+
 <body>
-    <p>test</p>
+    <div class="image-container">
+        <div class="logo-container">
+            <img src="img/marryTea-logo-transparent-credits-ramona.webp"
+                alt="The picture shows the logo of the website">
+            <p class="logo-text">marryTea</p>
+        </div>
+        <p class="credits-background">Photo by <a href="https://unsplash.com/@shaipal">Shai Pal </a>on <a
+                href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+    <div class="content-container">
+        <div id="top-text-container">
+            <h1>This is about to be a real service dog!
+                <br>How does Moses make his tea?
+                <br>Hebrews it!
+            </h1>
+            <br>
+            <h2>You're my bes<span id="bestea">tea</span>!</h2>
+        </div>
+        <form>
+            <section id="input-section">
+                <legend>Let's create an account!</legend>
+                <div class="input-row">
+                    <div class="input-field">
+                        <label for="first-name"><span aria-required="true">*</span>First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="last-name"><span aria-required="true">*</span>Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-field">
+                        <label for="email"><span aria-required="true">*</span>Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="phone-number"></span>Phone Number</label>
+                        <input type="text" name="phone-number" id="phone-number" pattern="">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-field">
+                        <label for="password"><span aria-required="true">*</span>Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="confirm-password"><span aria-required="true">*</span>Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </div>
+            </section>
+            <div class="button-container">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <span><a href="">Log in</a></span></p>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
